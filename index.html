@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Banking Form</title>
+    <link rel="stylesheet" href="validation.css">
+  </head>
+
+  <body>
+    <header>
+      <h1>Loan Application</h1>
+    </header>
+
+    <form action="#">
+      <fieldset>
+        <legend>Application Information</legend>
+
+        <label>First Name*</label>
+        <input type="text" name="first_name" required />
+
+        <label>Middle Name</label>
+        <input type="text" name="middle_name">
+
+        <label>Last Name</label>
+        <input type="text" name="last_name">
+
+        <label>Address</label>
+        <input type="text" name="address_line1" required />
+        <input type="text" name="address_line2" />
+
+        <label>City</label>
+        <input type="text" name="city">
+
+        <label>State</label>
+        <input type="text" name="state">
+
+        <label>Zip</label>
+        <input type="number" name="zipcode">
+      </fieldset>
+
+      <fieldset>
+        <legend>Occupation Information</legend>
+
+        <label>Occupation</label>
+        <input type="text" name="occupation" />
+
+        <label>Employer</label>
+        <input type="text" name="employer_name" />
+
+        <label>Employer Address</label>
+        <input type="text" name="employer_address_line1" />
+        <input type="text" name="employer_address_line2" />
+
+        <label>City</label>
+        <input type="text" name="employer_city" />
+
+        <label>State</label>
+        <input type="text" name="employer_state" />
+
+        <label>Zip</label>
+        <input type="number" name="employer_zipcode" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Loan Information</legend>
+
+        <label>Type of Loan</label>
+        <select name-"loan_type" required>
+          <option value="" select></option>
+          <option value="commercial">Commercial</option>
+          <option value="real-estate">Real Estate</option>
+          <option value="personal">Personal</option>
+          <option value="mortgage">Mortgage</option>
+        </select>
+
+        <label>Requested Amount</label>
+        <input type="number" name="loan_amount" required />
+
+        <h5>Loan Term</h5>
+
+        <label>5 Years</label>
+        <input type="radio" name="five_years" value="5" checked="true" />
+
+        <label>15 Years</label>
+        <input type="radio" name="fifteen_years" value="15" />
+
+        <label>30 Years</label>
+        <input type="radio" name="thirty_years" value="30" />
+
+        <h5>Special Conditions</h5>
+        <label>I have a down payment</label>
+        <input type="checkbox" name="down_payment" value="1" />
+
+        <label>Out-of-state resident</label>
+        <input type="checkbox" name="out_of_state" value="2" />
+
+        <label>Married</label>
+        <input type="checkbox" name="married" value="3" />
+
+        <label>Loan will be co-signed</label>
+        <input type="checkbox" name="co_sign" value="4" />
+      </fieldset>
+
+      <fieldset>
+        <legend>Additional Information</legend>
+        <textarea type="textarea" rows="10" cols="50" placeholder="Comments"></textarea>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contact Information</legend>
+
+        <label>Email Address</label>
+        <input type="email" name="email" required/>
+
+        <label>Phone*</label>
+        <input type="phone" name="phone" required/>
+
+        <label>LinkedIn Url</label>
+        <input type="link" name="linkedin_url">
+      </fieldset>
+      <button>Submit</button>
+    </form>
+  </body>
+</html>
